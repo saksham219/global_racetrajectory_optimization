@@ -1,4 +1,4 @@
-### Optimal Racing Line computation
+## Optimal Racing Line computation
 
 Fork of [repository](https://github.com/TUMFTM/global_racetrajectory_optimization) for finding optimal trajectory for a race car on a race track.
 This fork does two major updates:
