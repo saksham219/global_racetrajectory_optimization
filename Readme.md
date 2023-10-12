@@ -1,4 +1,6 @@
-Fork of [repository](https://github.com/TUMFTM/global_racetrajectory_optimization) for finding optimal trajectory for race car.
+### Optimal Racing Line computation
+
+Fork of [repository](https://github.com/TUMFTM/global_racetrajectory_optimization) for finding optimal trajectory for a race car on a race track.
 This fork does two major updates:
 
 - Incoroporates Single Track model.
@@ -7,13 +9,13 @@ This fork does two major updates:
 This code has been tested with Python 3.8.16
 The code for spline regression is contained in `trajectory_planning_helpers/spline_approximation_open.py`
 
-1. Install packages
+1. Install packages.
 
 ```
 pip install -r requirements.txt
 ```
 
-2. Run code to calculate optimal trajectory and generate plots
+2. Run code to calculate optimal trajectory and generate plots.
 
 ```
 python3 main_globaltraj.py
