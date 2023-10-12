@@ -47,8 +47,9 @@ def check_traj(reftrack: np.ndarray,
     # ------------------------------------------------------------------------------------------------------------------
 
     # calculate boundaries and interpolate them to small stepsizes (currently linear interpolation)
-    bound_r = reftrack[:, :2] + reftrack_normvec_normalized * np.expand_dims(reftrack[:, 2], 1)
-    bound_l = reftrack[:, :2] - reftrack_normvec_normalized * np.expand_dims(reftrack[:, 3], 1)
+    print(reftrack_normvec_normalized * np.expand_dims(reftrack[:, 2], 1).shape)
+    bound_r = reftrack[:-1, :2] + reftrack_normvec_normalized * np.expand_dims(reftrack[:-1, 2], 1)
+    bound_l = reftrack[:-1, :2] - reftrack_normvec_normalized * np.expand_dims(reftrack[:-1, 3], 1)
 
     # check boundaries for vehicle edges
     bound_r_tmp = np.column_stack((bound_r, np.zeros((bound_r.shape[0], 2))))
